@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Zerando Padrões & aplicando Padrões */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+/* Ajustando HTML */
+
+html{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Pagina */
+
+.pag{
+    background-color:#ffebd5;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cards Receita */
+
+.Receitas{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 600px));
+    display: grid;
+    justify-content: center;
+}
+.card{
+    margin: 5rem;
+    width: 30rem;
+}
+.card-img-top{
+    padding: 1rem;
+}
+.card-img-top img{
+    border: 3px solid black;
+    width: 20rem;
+}
+
+
+/* Pagina TXT*/
+
+.pag h1{
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+.pag h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 2rem;
+}
+.pag h3{
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin: 2rem;
+}
+.pag h4{
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+.card-text li{
+    margin: 1.5rem;
+}
+
+/* Formatação */
+
+@media (max-width: 1250px){
+    .card-text li{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .Receitas{
+        justify-content: center;
+    }
+    .card{
+        width: 25rem;
+    }
+}
+
+@media (max-width: 500px){
+    .Receitas{
+        justify-content: center;
+    }
+    .card{
+        width: 20rem;
+    }
+    .card-img-top img{
+        width: 15rem;
+    }
+    .pag h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 415px){
+    .Receitas{
+        justify-content: center;
+        text-align: center;
+    }
+    .card{
+        width: 15rem;
+    }
+    .card-img-top img{
+        width: 10rem;
+    }
+    .pag h2{
+        font-size: 1.5rem;
+    }
+    .pag h3{
+        font-size: 1.3rem;
+    }
+    .pag h4{
+        font-size: 1.2rem;
+    }
+    .card-text li{
+        font-size: 0.9rem;
+    }
+}

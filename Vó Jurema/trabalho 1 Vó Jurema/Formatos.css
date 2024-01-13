@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Zerando Padrões & aplicando Padrões */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+/* Ajustando HTML */
+
+html{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Logo/Home */
+
+.Home{
+    text-align:center;
+    background-color:#ffebd5;
+}
+
+.Home img{
+    height: 30rem;
+    width: 30rem;
+}
+
+/* TXT-Home */
+
+.Sobre{
+    text-align: center;
+    background-color: rgba(243, 156, 85, 0.589);
+    flex-direction: column;
+    border: 0.1rem solid #000000;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.Sobre h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+/* Formatação */
+
+@media (max-width: 500px){
+    .Home img{
+        height: 15rem;
+        width: 15rem;
+    }
+}
